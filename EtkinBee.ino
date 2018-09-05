@@ -14,26 +14,27 @@ runSpeed	: Motor hizi.
 -	Etkin Teknolojiler
 -	Cagatay YILMAZ
 -	arge@etkinteknolojiler.com
-********************************************************************************/
+*******************************************************************************/
 
 
-#include <etkinbot.h>
+#include "etkinbot.h"
 
-Etkinclass etkinbot;
+EtkinClass etkinbot;
 
 uint8_t startButton = 7;
 uint8_t buzzer = 8;
 uint8_t buttonVal[100];
 int val = 0;
-int counter = 0;
+int count = 0;
 int goDist = 150;
 int turnDist = 55;
 uint8_t runSpeed = 255;
 
 void setup()
 {
-	pinMode(button, INPUT);
-	pinMode(button, OUTPUT);
+	pinMode(startButton, INPUT);
+	pinMode(buzzer, OUTPUT);
+	Serial.begin(9600);
 }
 void loop()
 {
@@ -42,20 +43,27 @@ void loop()
 		val = readButton();
 		if(val != 0)
 		{
-			buttonVal[counter] = val;
-			counter++;
+			buttonVal[count] = val;
+			count++;
+			etkinbot.ledcolor(120, 255, 120);
+			tone(buzzer,262,500);
+			delay(500);
+			Serial.print("deger: ");
+			Serial.println(val);
+			etkinbot.ledcolor(0, 0, 0);
 		}
 
 		if(digitalRead(startButton) == 1)
 		{
-			counter = 0;
+			count = 0;
 			etkinbot.ledcolor(0, 255, 0);
-			tone(buzzer,262,500);
-			delay(200);
+			tone(buzzer,440,500);
+			delay(2000);
 			break;
 		}
 	}
-	if(run(buttonVal) == 0) playMusic();
+	//if(run(buttonVal) == 0) playMusic();
+	run(buttonVal);
 }
 
 /* run()********************************************************************
@@ -64,24 +72,27 @@ void loop()
 2 --> geri
 3 --> sol
 4 --> sag
-****************************************************************************/
-int run(int array[])
+***************************************************************************/
+int run(uint8_t array[])
 {
 	int _dist = 0;
 	for(int i = 0; array[i] != NULL; i++)
 	{
 		if(array[i] == 1 || array[i] == 2) _dist = goDist;
-		else if(array[i] == 3 || array[i] == 4) _dist = tunDist;
-		etkinbot.movePID(array[i], runSpeed, _dist);
+		else if(array[i] == 3 || array[i] == 4) _dist = turnDist;
+		Serial.print("deger: ");
+		Serial.println(array[i]);
+		etkinbot.movePid(array[i], runSpeed, _dist);
+		delay(1000);
 	}
 
 	return 0;
 }
 
-/* readButton()************************************************************
+/* readButton()*****************************************************************
 -A0 pinine baglanmis olan buttonlarin analog degerini okuyup yon bilgisine
 cevirir.
-***************************************************************************/
+*******************************************************************************/
 int readButton()
 {
 	int _readVal = analogRead(A0);
