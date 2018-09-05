@@ -27,7 +27,7 @@ uint8_t buttonVal[100];
 int val = 0;
 int count = 0;
 int goDist = 150;
-int turnDist = 55;
+int turnDist = 65;
 uint8_t runSpeed = 255;
 
 void setup()
@@ -46,8 +46,8 @@ void loop()
 			buttonVal[count] = val;
 			count++;
 			etkinbot.ledcolor(120, 255, 120);
-			tone(buzzer,262,500);
-			delay(500);
+			tone(buzzer,262,1000);
+			delay(1000);
 			Serial.print("deger: ");
 			Serial.println(val);
 			etkinbot.ledcolor(0, 0, 0);
@@ -83,6 +83,7 @@ int run(uint8_t array[])
 		Serial.print("deger: ");
 		Serial.println(array[i]);
 		etkinbot.movePid(array[i], runSpeed, _dist);
+		tone(buzzer,330, 500);
 		delay(1000);
 	}
 
@@ -95,13 +96,12 @@ cevirir.
 *******************************************************************************/
 int readButton()
 {
-	int _readVal = analogRead(A0);
-
-	if (_readVal > 600) return 1;
-	else if (_readVal > 500 && _readVal <  600) return 2;
-	else if (_readVal > 300 && _readVal <  500) return 3;
-	else if (_readVal > 30 && _readVal <  300) return 4;
-	else if (_readVal < 30) return 0;
+	int _readVal = analogRead(A4);
+	if (_readVal == 0) return 1;
+	else if (_readVal > 0 && _readVal <  520) return 2;
+	else if (_readVal > 520 && _readVal <  700) return 3;
+	else if (_readVal > 700 && _readVal <  1020) return 4;
+	else if (_readVal > 1020 ) return 0;
 }
 
 /* playMusic()************************************************************
