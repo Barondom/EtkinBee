@@ -13,7 +13,9 @@ runSpeed	: Motor hizi.
 
 -	Etkin Teknolojiler
 -	Cagatay YILMAZ
+	R&D
 -	arge@etkinteknolojiler.com
+
 *******************************************************************************/
 
 
