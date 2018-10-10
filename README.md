@@ -7,7 +7,7 @@
 * 4 adet 12x12mm Button
 * 1 adet 5x5cm Delikli Kart
 * 4 adet 1k Ohm Direnç
-* 1 adet 4 Pin Erkek Header 
+* 1 adet 4 Pin Erkek Header
 ## Araç-Gereçler
 * Havya ve lehim teli
 * Yan Keski
