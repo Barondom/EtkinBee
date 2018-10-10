@@ -18,11 +18,11 @@
 * Yan Keski
 
 ## Yapım Aşamaları
-* 5x5 cm boyutlarında olan delikli kartı şekilde görülen şekilde yerleştirin.
+* 5x5 cm boyutlarında olan delikli kartı şekildeki gibi yerleştirin.
 
 ![alt text](https://github.com/Barondom/EtkinBee/blob/master/doc/yerlesim.png "Elemanların Yerleşimi")
 
-Yerleşim yaparken delikli kartın 20x20 delik olğunu göz önünde bulundurun.
+Yerleşim yaparken delikli kartın 20x20 delik olduğunu göz önünde bulundurun.
 
 * Karta bulunan elemanlar arasında yapılması gereken bağlantı aşağıda görülmektedir.
 
