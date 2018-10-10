@@ -36,8 +36,9 @@ Yerleşim yaparken delikli kartın 20x20 delik olğunu göz önünde bulundurun.
 * Bağlantı yaptığınız pinleri lehimleyin.
 > DİKKAT! Lehim yaparken bir yetişkin yada öğretmen gözetiminde yapınız. Lehim sırasında, lehim dumanı emici yada fan kullanmalısınız.
 
-![alt text](https://github.com/Barondom/EtkinBee/blob/master/doc/arkailk.jpg "Elemanların Bağlantıları")
-
 
 * Lehimleme sonucunda kalan direncin uzun bacaklarını yan keski ile kesin.
+
+![alt text](https://github.com/Barondom/EtkinBee/blob/master/doc/kes.jpg "Elemanların Bağlantıları")
+
 
