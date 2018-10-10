@@ -14,3 +14,5 @@
 
 ## Yapım Aşamaları
 * 5x5 cm boyutlarında olan delikli kartı şekilde görülen şekilde yerleştirin.
+
+![alt text](https://github.com/Barondom/EtkinBee/blob/master/doc/yerlesim.png "Elemanların Yerleşimi")
