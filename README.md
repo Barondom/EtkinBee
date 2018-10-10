@@ -16,3 +16,17 @@
 * 5x5 cm boyutlarında olan delikli kartı şekilde görülen şekilde yerleştirin.
 
 ![alt text](https://github.com/Barondom/EtkinBee/blob/master/doc/yerlesim.png "Elemanların Yerleşimi")
+
+Yerleşim yaparken delikli kartın 20x20 delik olğunu göz önünde bulundurun.
+
+* Karta bulunan elemanlar arasında yapılması gereken bağlantı aşağıda görülmektedir.
+
+![alt text](https://github.com/Barondom/EtkinBee/blob/master/doc/baglant%C4%B1lar.png "Elemanların Bağlantıları")
+
+* Kartın sağ kenarından tutarak kartı ters çevirin.
+* Aşağıda gürülen bağlantıları dirençlerin bacaklarını kullanarak yapın.
+
+![alt text](https://github.com/Barondom/EtkinBee/blob/master/doc/arkailk.jpg "Elemanların Bağlantıları")
+
+* Bağlantı yaptığınız pinleri lehimleyin.
+> DİKKAT! Lehim yaparken bir yetişkin yada öğretmen gözetiminde yapınız. Lehim sırasında, lehim dumanı emici yada fan kullanmalısınız.
