@@ -41,4 +41,14 @@ Yerleşim yaparken delikli kartın 20x20 delik olğunu göz önünde bulundurun.
 
 ![alt text](https://github.com/Barondom/EtkinBee/blob/master/doc/kes.jpg "Elemanların Bağlantıları")
 
+* Kablolardan parçalar keserek, uçlarını açınız.
+![alt text](https://github.com/Barondom/EtkinBee/blob/master/doc/kablokesim.jpg "Kablo")
+
+* Eksik kalan bağlatıları kabloları kullanarak tamamlayın. Lehimleme tamamlandığında delikli kartınız aşağıdaki gibi olacaktır.
+
+![alt text](https://github.com/Barondom/EtkinBee/blob/master/doc/bittiarka.jpg "Son Hali")
+---
+#### Kartın Son Hali
+Buton devresini Etkinbot Akıllı Böcek Ekran Adaptörünü kullanarak robota bağlayabilirsiniz.
+[alt text](https://github.com/Barondom/EtkinBee/blob/master/doc/bittiarka.jpg "Son Hali")
 
