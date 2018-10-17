@@ -50,5 +50,5 @@ Yerleşim yaparken delikli kartın 20x20 delik olduğunu göz önünde bulunduru
 ---
 #### Kartın Son Hali
 Buton devresini Etkinbot Akıllı Böcek Ekran Adaptörünü kullanarak robota bağlayabilirsiniz.
-[alt text](https://github.com/Barondom/EtkinBee/blob/master/doc/bittiarka.jpg "Son Hali")
+[alt text](https://github.com/Barondom/EtkinBee/blob/master/doc/bitti.jpg "Son Hali")
 
